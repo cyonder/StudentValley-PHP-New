@@ -1,0 +1,202 @@
+/*
+* This CSS file should be added pages that has header page in it.
+* All the header CSS kept in this css file.
+* This file is different from header-global.css.
+*/
+
+#global-container{}
+
+#container{
+    margin: 20px auto auto auto;
+    min-height: 483px; /* Keep the footer under sidebar and content */
+    width: 980px;
+}
+
+#content{
+    width: 766px; /* 10px is missing because of margin-left */
+    margin-left: 10px;
+    float: left;
+}
+
+html{overflow-y: scroll;}
+
+*{font-family: helvetica, arial, "lucida grande", sans-serif;}
+
+li{
+    display: inline-block;
+    float: left; /* Remove space between links */
+}
+
+a{
+    color: #084F81;
+    text-decoration: none;
+}
+
+label{
+    cursor: pointer;
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.checkbox{ /*Cross-browser hack*/
+    height: 13px;
+    margin: 0 2px 0 0; /* Position of checkbox */
+    *overflow: hidden;
+    padding: 0;
+    position: relative;
+    top: -1px;
+    vertical-align: bottom;
+    width: 13px;
+}
+
+.button{
+    background: url("/image/sv/Button-Blue-Outset-165x60.png") no-repeat;
+    background-size: 55px 20px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    outline: 0;
+    padding: 2px 0; /* To avoid text movement when button is active */
+    width: 55px;
+}
+
+.button:active{
+    background: url("/image/sv/Button-Blue-Inset-165x60.png") no-repeat;
+    background-size: 55px 20px;
+    height: 20px;
+    width: 55px;
+}
+
+.button-2{
+    background: url("/image/sv/Button-Yellow-Inset-360x60.png") no-repeat;
+    background-size: 120px 20px;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 0 2px; /* To avoid text movement when button is active */
+    width: 120px;
+}
+
+.button-2:active{
+    background: url("/image/sv/Button-Yellow-Outset-360x60.png") no-repeat;
+    background-size: 120px 20px;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    width: 120px;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+#header{
+    background: -webkit-linear-gradient(180deg,#307FB7, #084F81);
+    background: -moz-linear-gradient(180deg,#307FB7, #084F81);
+    background: -ms-linear-gradient(180deg,#307FB7, #084F81);
+    background: -o-linear-gradient(180deg,#307FB7, #084F81);
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    border-bottom: 1px solid #000000;
+    height: 40px;  /* Height of the top blue bar */
+}
+
+#header-wrapper{
+    margin: auto;
+    width: 980px;
+}
+
+#header-logo{
+    float: left;
+    margin-top: 2px; /* Centralize vertically */
+}
+
+#header-logo a{
+    background: url("/image/sv/Logo-Medium.png") no-repeat;
+    background-size: 193px 36px; /* Size of logo */
+    display: inline-block;
+    height: 36px; /* Height of logo */
+    text-indent: -9999px;
+    width: 193px; /* Width of logo */
+}
+
+#header-search{
+    float: left;
+    margin-top: 8px; /* Centralize vertically */
+}
+
+#header-search input{
+    background: url("/image/sv/Search-Icon.png") #307FB7 no-repeat right;
+    background-size: 38px 38px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 24px;
+    margin-left: 20px; /* Distance between search bar and logo */
+    outline: none;
+    width: 320px;
+}
+
+::-webkit-input-placeholder{ /* WebKit browsers */
+    color: #BDC7D8;
+}
+:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+    color: #BDC7D8;
+    opacity: 1;
+}
+::-moz-placeholder{ /* Mozilla Firefox 19+ */
+    color: #BDC7D8;
+    opacity: 1;
+}
+:-ms-input-placeholder{ /* Internet Explorer 10+ */
+    color: #BDC7D8;
+}
+
+#header-menu{
+    float: right;
+    font-size: 15px;
+    margin-top: 13px;
+}
+
+#header-menu li:after{
+    color: #084F81;
+    content: "|";
+}
+
+#header-menu li:last-child:after{
+    content: "";
+    padding-left: 0;
+}
+
+#header-menu a{
+    border-radius: 3px;
+    color: #FFFFFF;
+    padding: 2px 5px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#header-menu a:hover{
+    box-shadow:inset 0 0 85px rgba(0,0,0,.2);
+    -webkit-box-shadow:inset 0 0 85px rgba(0,0,0,.2);
+    -moz-box-shadow:inset 0 0 85px rgba(0,0,0,.2);
+}
+
+#header-menu a:active{
+    box-shadow: inset 0 0 85px rgba(0, 0, 0, 0.3)
+}

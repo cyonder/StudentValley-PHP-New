@@ -1,0 +1,107 @@
+#global-container{}
+
+*{
+    font-family: helvetica, arial, "lucida grande", sans-serif;
+}
+
+a{
+    color: #084F81;
+    text-decoration: none;
+}
+
+label{
+    cursor: pointer;
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+#header{
+    background: -webkit-linear-gradient(180deg,#307FB7, #084F81);
+    background: -moz-linear-gradient(180deg,#307FB7, #084F81);
+    background: -ms-linear-gradient(180deg,#307FB7, #084F81);
+    background: -o-linear-gradient(180deg,#307FB7, #084F81);
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    border-bottom: 1px solid #000000;
+    height: 70px; /* Height of the top blue bar */
+}
+
+#header-wrapper{
+    margin: auto;
+    padding-top: 5px; /* Centralize vertically */
+    width: 980px;
+}
+
+#header-logo{
+    float: left;
+}
+
+#header-logo a{
+    background: url("/image/sv/Logo-Big.png") no-repeat;
+    background-size: 260px 60px; /* Size of logo */
+    display: inline-block;
+    height: 60px; /* Height of logo */
+    text-indent: -9999px;
+    width: 260px; /* Width of logo */
+}
+
+#header-button{
+    margin-top: 20px; /* Centralize yellow button */
+    float: right;
+}
+
+.button{
+    background: url("/image/sv/Button-Blue-Outset-165x60.png") no-repeat;
+    background-size: 55px 20px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    outline: 0;
+    padding: 2px 0; /* To avoid text movement when button is active */
+    width: 55px;
+}
+
+.button:active{
+    background: url("/image/sv/Button-Blue-Inset-165x60.png") no-repeat;
+    background-size: 55px 20px;
+    height: 20px;
+    width: 55px;
+}
+
+.button-2{
+    background: url("/image/sv/Button-Yellow-Outset-360x60.png") no-repeat;
+    background-size: 120px 20px;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 0 2px; /* To avoid text movement when button is active */
+    width: 120px;
+}
+
+.button-2:active{
+    background: url("/image/sv/Button-Yellow-Inset-360x60.png") no-repeat;
+    background-size: 120px 20px;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    width: 120px;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}

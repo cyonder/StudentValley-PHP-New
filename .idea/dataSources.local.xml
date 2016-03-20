@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - studentv_main@127.0.0.1" uuid="148b72e0-5c2f-4ab4-a7e5-a27cfc7ddc51">
+      <secret-storage>master_key</secret-storage>
+      <user-name>studentvalley</user-name>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>192.163.219.83</proxy-host>
+        <proxy-port>22</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>studentvalley</user>
+        <use-password>true</use-password>
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>

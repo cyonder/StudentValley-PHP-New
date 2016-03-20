@@ -1,0 +1,146 @@
+aside{
+    float: left;
+}
+
+#sidebar{
+    border-right: 1px solid #307FB7;
+    width: 203px; /* Fix the size of sidebar */
+}
+
+#sidebar hr{
+    background-color: #307FB7;
+    border: 0;
+    height: 1px;
+}
+
+#sidebar-wrapper{
+    width: 193px; /* Create blank space between right border and the menu items */
+}
+
+.sidebar-section{
+    margin-bottom: 10px;
+}
+
+.sidebar-section:last-child{
+    margin-bottom: 0;
+}
+
+.sidebar-section .item{
+    color: #000000;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidebar-section .item a{
+    color: #000000;
+    display: block;
+    overflow: hidden;
+    padding: 3px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.sidebar-section .item a:hover{
+    color: #307FB7;
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}
+
+.sidebar-section .menu{
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+
+.sidebar-section .menu:last-child{
+    margin-bottom: 0;
+}
+
+.sidebar-section .menu a{
+
+}
+
+.sidebar-section .side-title{
+    color: #307FB7;
+    cursor: default;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#icon-1{
+    background: url("/image/sv/Add-Courses.png") no-repeat 2px 2px;
+    background-size: 18px 18px;
+}
+
+#icon-1:hover{
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}
+
+#icon-2{
+    background: url("/image/sv/Join-Groups.png") no-repeat 2px 2px;
+    background-size: 18px 18px;
+}
+
+#icon-2:hover{
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}
+
+#icon-3{
+    background: url("/image/sv/Find-Book.png") no-repeat 2px 2px;
+    background-size: 18px 18px;
+}
+
+#icon-3:hover{
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}
+
+#icon-4{
+    background: url("/image/sv/Find-Notes.png") no-repeat 2px 2px;
+    background-size: 18px 18px;
+}
+
+#icon-4:hover{
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}
+
+#icon-5{
+    background: url("/image/sv/Find-Roommates.png") no-repeat 2px 2px;
+    background-size: 18px 18px;
+}
+
+#icon-5:hover{
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}
+
+#icon-6{
+    background: url("/image/sv/My-Connections.png") no-repeat 2px 2px;
+    background-size: 18px 18px;
+}
+
+#icon-6:hover{
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}
+
+#icon-7{
+    background: url("/image/sv/Account-Settings.png") no-repeat 2px 2px;
+    background-size: 18px 18px;
+}
+
+#icon-7:hover{
+    background-color: #E7E7E7;
+    border-radius: 2px;
+}

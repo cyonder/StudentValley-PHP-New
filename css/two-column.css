@@ -1,0 +1,823 @@
+/*
+* This CSS file should be added pages, which have sidebar in it.
+*
+* This CSS file is for two column pages only.
+*
+* This CSS file contains the styles for pages that are gonna show up when user is logged in.
+*
+* In this CSS while styling, using general tags must be avoided. Because this file is used for
+* many other pages, as well. Otherwise, the pages are gonna be messed up.
+*
+* While styling, use unique id or class names before the general tags.
+*/
+
+/*************************************
+**************************************
+                GENERAL
+**************************************
+*************************************/
+.button-3 a{
+    background: -webkit-linear-gradient(180deg,#A1A1A1, #909090);
+    background: -moz-linear-gradient(180deg,#A1A1A1, #909090);
+    background: -ms-linear-gradient(180deg,#A1A1A1, #909090);
+    background: -o-linear-gradient(180deg,#A1A1A1, #909090);
+    background: linear-gradient(180deg,#A1A1A1, #909090);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 2px 5px;
+    vertical-align: top;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.button-3 li{margin-right: 5px;}
+
+.button-3 li:last-child{margin-right: 0;}
+
+.button-4{ /* Same as the button defined in header but longer */
+    background: url("/image/sv/Button-Blue-Outset-270x60.png") no-repeat;
+    background-size: 90px 20px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    outline: 0;
+    padding: 2px 0; /* To avoid text movement when button is active */
+    width: 90px;
+}
+
+.button-4:active{ /* Same as the .button in header but longer */
+    background: url("/image/sv/Button-Blue-Inset-270x60.png") no-repeat;
+    background-size: 90px 20px;
+    height: 20px;
+    width: 90px;
+}
+
+::-webkit-file-upload-button { cursor:pointer; }
+
+.button-5{
+    background: url("/image/sv/Button-Picture-Outset-345x60.png") no-repeat;
+    background-size: 115px 20px;
+    border: 0;
+    color: #FFFFFF;
+    position: relative;
+    height: 20px;
+    width: 115px;
+}
+
+
+.button-5:active{
+    background: url("/image/sv/Button-Picture-Inset-345x60.png") no-repeat;
+    background-size: 115px 20px;
+    border: 0;
+    color: #FFFFFF;
+    position: relative;
+    height: 20px;
+    width: 115px;
+}
+
+.button-5 span{
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 26px;
+    position: relative;
+    top: 5px;
+
+}
+
+.button-5 input.upload{
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    left: 1px;
+    position: relative;
+    opacity: 0;
+    top: -12px;
+    width: 115px;
+}
+
+.button-6{
+    background: url("/image/sv/Button-Remove-Outset-345x60.png") no-repeat;
+    background-size: 115px 20px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    outline: 0;
+    /* Button text align and avoid text movement when button is active */
+    padding: 2px 0 2px 18px;
+    width: 115px;
+}
+
+.button-6:active{
+    background: url("/image/sv/Button-Remove-Inset-345x60.png") no-repeat;
+    background-size: 115px 20px;
+    height: 20px;
+    width: 115px;
+}
+
+#top{line-height: 22px;}
+
+.title{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 17px;
+    padding: 2px 5px 2px 5px;
+}
+
+.subtitle{
+    color: #666666;
+    font-size: 12px;
+    font-family: Tahoma, Geneva, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.content-box{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #BDC7D8;
+    border-top-width: 0;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.content-box:last-child{
+    margin-bottom: 0;
+}
+
+.content-section{
+    margin: 5px 0;
+}
+
+/* NON-SELECTABLE */
+.title, .subtitle{
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* OVERFLOW HIDDEN */
+.profile-item, #profile-name,
+.conn-request td, .conn-yours td,
+.books-books td, .title, .title a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* TABLE FIXED */
+.conn-request table, .conn-yours table, .books-books table{
+    table-layout: fixed;
+}
+
+/* FONT 14 */
+.font-14{
+    font-size: 14px;
+}
+
+/* COLOR GREY */
+.color-666{
+    color: #666666;
+}
+
+.message-title{
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1; /* Change back the line height caused by #error-wrapper */
+    margin-bottom: 5px; /*Distance to second error message */
+}
+
+.pagination{
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 12px -6px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0 0 12px -6px rgba(0,0,0,1);
+    box-shadow: inset 0 0 12px -6px rgba(0,0,0,1);
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+.error{
+    background: url("/image/sv/Warning-Sign.png") #FFCCBA no-repeat 5px;
+    background-size: 28px 28px;
+    border: 1px solid #D63301;
+    color: #D63301;
+    min-height: 18px;  /*Height of the error bar*/
+}
+
+.error-wrapper{
+    font-size: 14px;
+    line-height: 20px; /* Line height between error message */
+    padding: 5px 5px 5px 40px;
+    word-wrap: break-word;
+}
+
+.error-wrapper span{
+    background: url("/image/sv/Red-Dot.png") no-repeat 5px 8px;
+    background-size: 5px 5px;
+    display: block; /* Start errors in new line */
+    padding-left: 15px;
+}
+
+.success{
+    background: url("/image/sv/Success-Sign.png") #DFF1C1 no-repeat 5px;
+    background-size: 28px 28px;
+    border: 1px solid #51891E;
+    color: #51891E;
+    min-height: 18px;  /* Height of the success bar */
+}
+
+.success-wrapper{
+    font-size: 14px;
+    line-height: 20px; /* Line height between success message */
+    padding: 5px 5px 5px 40px;
+    word-wrap: break-word;
+}
+
+.info{
+    background: url("/image/sv/Info-Sign.png") #BEE5F7 no-repeat 5px;
+    background-size: 28px 28px;
+    border: 1px solid #307FB7;
+    color: #307FB7;
+    min-height: 18px;  /* Height of the info bar */
+}
+
+.info-wrapper{
+    font-size: 14px;
+    line-height: 20px; /* Line height between error message */
+    padding: 5px 5px 5px 40px;
+    word-wrap: break-word;
+}
+
+.info-wrapper span{
+    background: url("/image/sv/Blue-Dot.png") no-repeat 5px 8px;
+    background-size: 5px 5px;
+    display: block; /* Start Info in new line */
+    padding-left: 15px;
+}
+
+#dialogbox-overlay{
+    background-color: #000000;
+    display: none;
+    opacity: .5;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+#dialogbox{
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    width: 550px;
+    z-index: 10;
+}
+
+#dialogbox > div {
+    background-color: #FFFFFF;
+    margin: 8px;
+}
+
+#dialogbox > div > #dialogbox-head{
+    background-color: #0069A8;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#dialogbox > div > #dialogbox-body{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+}
+
+#dialogbox > div > #dialogbox-foot{
+    background-color: #E5E5E5;
+    padding: 10px;
+    text-align: right;
+}
+
+/*************************************
+**************************************
+                BOOKS
+**************************************
+*************************************/
+#books-menu{
+    padding-bottom: 1px; /* Distance between menu and find books */
+}
+
+#books-menu ul li{
+    margin-right: 20px;
+    padding-bottom: 5PX;
+}
+
+#books-menu ul li:after{
+    color: #307FB7;
+    content: "|";
+    margin-left: 20px;
+}
+
+#books-menu ul li:last-child:after{
+    content: "";
+    padding-left: 0;
+}
+
+#books-menu ul li:last-child{
+    margin-right: 0;
+}
+
+#books-menu a{
+    padding-left: 19px;
+}
+
+#books-menu a:hover{
+    color: #307FB7;
+}
+
+#books-icon-1{
+    background: url("/image/sv/Last-Books.png") no-repeat 0 1px;
+    background-size: 14px 14px;
+}
+
+#books-icon-2{
+    background: url("/image/sv/Post-Ad.png") no-repeat 0 1px;
+    background-size: 14px 14px;
+}
+
+#books-icon-3{
+    background: url("/image/sv/My-Ads.png") no-repeat 0 1px;
+    background-size: 14px 14px;
+}
+
+.books-elements li{
+    margin-right: 5px;
+}
+
+.books-elements li:last-child{
+    margin-right: 0;
+}
+
+.books-input{
+    height: 20px;
+    width: 453px;
+}
+
+.books-select{
+    font-size: 14px;
+    margin-top: 1px;
+    width: 200px;
+}
+
+.books-books{
+    -webkit-box-shadow: 0 0 2px #333333;
+    -moz-box-shadow: 0 0 2px #333333;
+    box-shadow: 0 0 2px #333333;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.books-books:nth-last-child(2){
+    margin-bottom: 5px;
+}
+
+.books-books-inline:nth-last-child(2){
+    margin-bottom: 0;
+}
+
+.books-selected{
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+.books-books img{
+    border-radius: 3px;
+    display: block;
+    height: 66px;
+    width: 54px;
+    background-color: #E0E0E0; /* For transparent pics */
+}
+
+.books-content td{
+    overflow: hidden; /* Overflow hidden fixes the bug in safari */
+    word-wrap: break-word;
+    text-overflow: clip;
+    white-space: normal;
+    height: 46px;
+}
+
+/*************************
+**************************
+       BOOK(BOOK)
+**************************
+*************************/
+
+/*************************
+**************************
+      BOOK(MY-BOOKS)
+**************************
+*************************/
+.my-books-box{
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 252px;
+}
+
+.my-books-box:nth-child(3n){
+    margin-right: 0;
+}
+
+.my-books-box:nth-child(3n+1):nth-last-child(-n+3),
+.my-books-box:nth-child(3n+1):nth-last-child(-n+3) ~ .my-books-box{
+    margin-bottom: 0; /* Remove the margin of last 3 elements */
+}
+
+.my-books-title a{
+    color: #FFFFFF;
+    display: block;
+}
+
+.my-books-title:hover{
+    background-color: #084F81;
+}
+
+.my-books-image{
+    background-color: #E0E0E0;
+    display: table-cell; /* Centralize pic vertically */
+    height: 210px;
+    width: 240px;
+    vertical-align: middle; /* Centralize pic vertically */
+}
+
+.my-books-image img{
+    display: block; /* Centralize pic horizontally */
+    margin: auto; /* Centralize pic horizontally */
+    max-height: 210px;
+    max-width: 240px;
+}
+
+.my-books-item{
+    margin-top: 5px;
+}
+
+.my-books-item span{
+    color: #666666;
+}
+
+/*************************
+**************************
+      BOOK(POST-BOOK)
+**************************
+*************************/
+
+/*************************************
+**************************************
+             CONNECTIONS
+**************************************
+*************************************/
+#conn-find{
+    float: right;
+}
+
+.conn-find-item{
+    color: #FFFFFF;
+    padding: 3px;
+}
+
+.conn-find-item:hover{
+    background-color: #0E6AAB;
+}
+
+.conn-request, .conn-yours{
+    margin-bottom: 10px;
+}
+
+.conn-request img, .conn-yours img{
+    display: block;
+    height: 54px;
+    width: 54px;
+}
+
+.conn-request td, .conn-yours td{
+    height: 18px;
+}
+
+.conn-yours{
+    border-radius: 3px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    width: 362px;
+}
+
+.conn-request:nth-last-child(2){
+    margin-bottom: 5px;
+}
+
+.conn-request-inline:nth-last-child(2){
+    margin-bottom: 0;
+}
+
+.conn-yours:nth-child(2n){
+    margin-right: 0;
+}
+
+.conn-yours:nth-child(2n+1):nth-last-child(-n+2),
+.conn-yours:nth-child(2n+1):nth-last-child(-n+2) ~ .conn-yours{
+    margin-bottom: 0; /* Remove the margin of last 2 elements */
+}
+
+.conn-selected{
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+/*************************************
+**************************************
+              COURSES
+**************************************
+*************************************/
+
+/*************************
+**************************
+     COURSE(COURSE)
+**************************
+*************************/
+
+/*************************
+**************************
+  COURSE(SEARCH-COURSE)
+**************************
+**************************/
+
+/*************************************
+**************************************
+               DASHBOARD
+**************************************
+*************************************/
+
+/*************************************
+**************************************
+               GROUPS
+**************************************
+*************************************/
+
+/*************************
+**************************
+       GROUP(GROUP)
+**************************
+*************************/
+
+/*************************
+**************************
+      GROUP(MANAGE)
+**************************
+*************************/
+
+/*************************
+**************************
+      GROUP(MEMBERS)
+**************************
+*************************/
+
+/*************************
+**************************
+   GROUP(SEARCH-GROUP)
+**************************
+*************************/
+
+/*************************************
+**************************************
+                MESSAGES
+**************************************
+*************************************/
+
+/*************************************
+**************************************
+                NOTES
+**************************************
+*************************************/
+
+/*************************
+**************************
+     NOTE(MY-NOTES)
+**************************
+*************************/
+
+/*************************
+**************************
+       NOTE(NOTE)
+**************************
+*************************/
+
+/*************************
+**************************
+     NOTE(POST-NOTE)
+**************************
+*************************/
+
+/*************************************
+**************************************
+                PLACES
+**************************************
+*************************************/
+
+/*************************
+**************************
+    PLACE(MY-PLACES)
+**************************
+*************************/
+
+/*************************
+**************************
+      PLACE(PLACE)
+**************************
+*************************/
+
+/*************************
+**************************
+     PLACE(POST-PLACE)
+**************************
+*************************/
+
+/*************************************
+**************************************
+                PROFILE
+**************************************
+*************************************/
+#profile-name{
+    float: left;
+    letter-spacing: 1px;
+    width: 560px;
+}
+
+#profile-buttons{float: right;}
+
+#profile-left{
+    float: left;
+    width: 223px;
+}
+
+#profile-right{
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    width: 538px;
+}
+
+#profile-left img{
+    display: block; /* Remove the 2px extra space under image in firefox */
+    margin-bottom: 5px; /* Distance between picture and info box */
+    width: 223px;
+}
+
+.profile-item{
+    margin-bottom: 5px;
+    line-height: 18px;
+    padding-left: 22px;
+}
+
+.profile-item:last-child{
+    margin-bottom: 0;
+}
+
+.profile-conn{
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 54px;
+}
+
+.profile-conn:nth-child(9n){
+    margin-right: 0;
+}
+
+.profile-conn:nth-child(9n+1):nth-last-child(-n+9),
+.profile-conn:nth-child(9n+1):nth-last-child(-n+9) ~ .profile-conn{
+    margin-bottom: 0; /* Remove the margin of last 9 elements */
+}
+
+.profile-conn img{
+    display: block;
+    height: 54px;
+    width: 54px;
+}
+
+.groups-logo{
+    background: url("/image/sv/Groups.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+.courses-logo{
+    background: url("/image/sv/Courses.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+.school-logo{
+    background: url("/image/sv/School.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+.program-logo{
+    background: url("/image/sv/Program.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+.email-logo{
+    background: url("/image/sv/Email.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+.website-logo{
+    background: url("/image/sv/Website.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+.member-logo{
+    background: url("/image/sv/Member.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+/*************************************
+**************************************
+                SEARCH
+**************************************
+*************************************/
+
+/*************************************
+**************************************
+                SETTINGS
+**************************************
+*************************************/
+.settings-left{
+    float: left;
+    width: 377px;
+}
+
+.settings-right{
+    float: right;
+    width: 372px; /* 5px is missing to leave 5px space to left side */
+}
+
+.settings-left img{
+    height: 45px;
+    width: 45px;
+}
+
+.settings-left td{
+    padding-left: 5px; /* Distance between pictures and buttons */
+}
+
+.settings-left form{
+    margin-bottom: 5px;
+}
+
+.settings-left form:last-child{
+    margin-bottom: 0;
+}
+
+.settings-left label{
+    clear: both;
+}
+
+.settings-input{
+    float: right;
+    height: 19px;
+    width: 150px;
+}
+
+.settings-left label{
+    margin-bottom: 5px; /* Space between input boxes */
+}
+
+.settings-left input[name=submit]{
+    margin-left: 143px;
+    margin-top: 5px;
+}
+
+.settings-right .error, .settings-right .success{
+    margin-top: 5px;
+}

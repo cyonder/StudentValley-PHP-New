@@ -1,0 +1,148 @@
+#body{}
+
+#body-wrapper{
+    margin: 0 auto 10px auto;
+    width: 980px;
+}
+
+#headline{
+    color: #E9CF47;
+    font-size: 38px;
+    height: 42px;
+    margin: 10px 0;
+    text-align: center;
+    text-shadow: 2px 0 2px #000;
+    -moz-text-shadow: 2px 0 2px #000;
+    -webkit-text-shadow: 2px 0 2px #000;
+}
+
+#content-a{
+    float: left;
+    width: 730px;
+}
+
+.statement{
+    height: 50px;
+    padding-left: 58px; /* Distance between image and statement */
+    margin-bottom: 10px;
+}
+
+.statement:last-child{
+    margin-bottom: 0;
+}
+
+.title{
+    color: #307FB7;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 27px;
+    margin-bottom: 5px;
+    text-shadow: 2px 0 1px #084F81;
+    -moz-text-shadow: 2px 0 1px #084F81;
+    -webkit-text-shadow: 2px 0 1px #084F81;
+}
+
+.definition{
+    color: #666666;
+    font-size: 17px;
+}
+
+#image-1{
+    background: url("/image/sv/Information.png") no-repeat;
+    background-size: 50px;
+}
+
+#image-2{
+    background: url("/image/sv/Grade.png") no-repeat;
+    background-size: 50px;
+}
+
+#image-3{
+    background: url("/image/sv/Books.png") no-repeat;
+    background-size: 50px;
+}
+
+#image-4{
+    background: url("/image/sv/Professor.png") no-repeat;
+    background-size: 50px;
+}
+
+#image-5{
+    background: url("/image/sv/Roommate.png") no-repeat;
+    background-size: 50px;
+}
+
+#content-b{
+    float: right;
+    width: 250px;
+}
+
+#content-b table{
+    float: right;
+}
+
+#content-b caption{
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+#content-b img{
+    border: 1px solid #BDC7D8;
+    height: 77px;
+    width: 77px;
+}
+
+#content-b td{ /* Distance between images */
+    padding-right:10px;
+    padding-bottom: 10px;
+}
+
+#content-b td:nth-child(2n){
+    padding-right: 0;
+}
+
+#content-c{
+    background: -webkit-linear-gradient(180deg,#307FB7, #084F81);
+    background: -moz-linear-gradient(180deg,#307FB7, #084F81);
+    background: -ms-linear-gradient(180deg,#307FB7, #084F81);
+    background: -o-linear-gradient(180deg,#307FB7, #084F81);
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    border-top: 1px solid #084F81;
+    border-bottom: 1px solid #000000;
+    height: 80px; /* Height of the bottom blue bar */
+}
+
+#content-c-wrapper{
+    margin: auto;
+    width: 980px;
+}
+
+#content-c table{
+    color: #FFFFFF;
+    margin: auto;
+}
+
+#caption{
+    color: #E9CF47;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    text-align: center;
+    text-shadow: 2px 0 2px #000;
+    -moz-text-shadow: 2px 0 2px #000;
+    -webkit-text-shadow: 2px 0 2px #000;
+}
+
+#content-c td{
+    padding-right: 15px; /* Distance between boxes */
+}
+
+#content-c td:last-child{
+    padding-right: 0;
+}
+
+.signup-box{
+    border: 1px solid #BDC7D8;
+    font-size: 12px;
+    height: 20px;
+    width: 155px;
+}

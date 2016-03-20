@@ -1,0 +1,134 @@
+#global-container{}
+
+*{
+    font-family: helvetica, arial, "lucida grande", sans-serif;
+}
+
+a{
+    color: #084F81;
+    text-decoration: none;
+}
+
+label{
+    cursor: pointer;
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.checkbox{ /*Cross-browser hack*/
+    height: 13px;
+    margin: 0 2px 0 0; /* Position of checkbox */
+    *overflow: hidden;
+    padding: 0;
+    position: relative;
+    top: -1px;
+    vertical-align: bottom;
+    width: 13px;
+}
+
+.button{
+    background: url("/image/sv/Button-Blue-Outset-165x60.png") no-repeat;
+    background-size: 55px 20px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    outline: 0;
+    padding: 2px 0; /* To avoid text movement when button is active */
+    width: 55px;
+}
+
+.button:active{
+    background: url("/image/sv/Button-Blue-Inset-165x60.png") no-repeat;
+    background-size: 55px 20px;
+    height: 20px;
+    width: 55px;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+#header{
+    background: -webkit-linear-gradient(180deg,#307FB7, #084F81);
+    background: -moz-linear-gradient(180deg,#307FB7, #084F81);
+    background: -ms-linear-gradient(180deg,#307FB7, #084F81);
+    background: -o-linear-gradient(180deg,#307FB7, #084F81);
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    border-bottom: 1px solid #000000;
+    height: 70px; /* Height of the top blue bar */
+}
+
+#header-wrapper{
+    margin: auto;
+    padding-top: 5px; /* Centralize vertically */
+    width: 980px;
+}
+
+#header-logo{
+    float: left;
+}
+
+#header-logo a{
+    background: url("/image/sv/Logo-Big.png") no-repeat;
+    background-size: 260px 60px; /* Size of logo */
+    display: inline-block;
+    height: 60px; /* Height of logo */
+    text-indent: -9999px;
+    width: 260px; /* Width of logo */
+}
+
+#header-login{
+    float: right;
+}
+
+#header-login form{
+    margin: 0;
+}
+
+#header-login table{
+    color: #FFFFFF;
+}
+
+#header-login td{
+    padding-right: 15px; /* Distance between boxes */
+}
+
+#header-login td:last-child{
+    padding-right: 0;
+}
+
+#header-login a{
+     color: #BDC7D8; /* Color of "Forgot your password?" */
+ }
+
+#header-login a:hover{
+    text-decoration: underline;
+}
+
+.table-data{
+    color: #BDC7D8;
+    font-size: 12px !important;
+}
+
+.table-header, .table-data{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.login-box{
+    border: 1px solid #BDC7D8;
+    font-size: 12px;
+    height: 20px;
+    margin: 3px 0;
+    width: 155px;
+}

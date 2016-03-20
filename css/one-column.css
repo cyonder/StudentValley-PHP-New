@@ -1,0 +1,152 @@
+/*************************************
+**************************************
+    LOGIN, SIGNUP, FORGOT, RESET
+**************************************
+*************************************/
+#body-lsfr{}
+
+#body-lsfr #body-wrapper{
+    margin: auto;
+    padding-top: 30px; /* Distance to blur bar */
+    padding-bottom: 20px; /* Distance to footer bar */
+    /* 10px bottom distance already in footer.css */
+    width: 980px;
+}
+
+#body-lsfr #form{
+    border: 2px solid #BDC7D8;
+    border-radius: 5px;
+    margin: auto;
+    width: 600px;
+}
+
+#body-lsfr #form-title{
+    border-bottom: 2px solid #BDC7D8;
+    color: #084F81;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px 0;
+    width: 580px;
+}
+
+#body-lsfr #form-wrapper{
+    margin: 30px auto; /*Distance between form and border around*/
+    width: 300px;
+}
+
+#body-lsfr .logo{
+    background: url("/image/sv/Logo-Small.png") no-repeat;
+    background-size: 76px 59px; /* Size of logo */
+    display: inline-block;
+    height: 59px; /* Height of logo */
+    margin-left: 112px; /*Centralize logo*/
+    margin-bottom: 10px;
+    width: 76px; /* Width of logo */
+}
+
+#body-lsfr .logo-2{
+    background: url("/image/sv/Logo-Small.png") no-repeat;
+    background-size: 76px 59px; /* Size of logo */
+    display: inline-block;
+    height: 59px; /* Height of logo */
+    margin-top: 10px;
+    margin-left: 262px; /* Centralize logo */
+    margin-bottom: 10px;
+    width: 76px; /* Width of logo */
+}
+
+#body-lsfr .input-box{
+    border: 1px solid #BDC7D8;
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    margin: 3px 0 10px 0;
+    width: 300px;
+}
+
+#body-lsfr .link{
+    float: right;
+    margin-top: 4px; /* Centralize vertically to login button */
+}
+
+#body-lsfr #buttons{
+    margin-top: 10px; /* Distance of buttons to form */
+}
+
+#body-lsfr span{
+    font-size: 14px;
+}
+
+#body-lsfr #info{
+    background: url("/image/sv/Info-Sign.png") #BEE5F7 no-repeat 5px;
+    background-size: 28px 28px;
+    border: 1px solid #307FB7;
+    color: #307FB7;
+    min-height: 18px;  /* Height of the info bar */
+    margin: 10px auto auto auto;
+    width: 580px;
+}
+
+#body-lsfr #info-wrapper{
+    line-height: 20px; /* Line height between error message */
+    padding: 5px 5px 5px 40px;
+    word-wrap: break-word;
+}
+
+#body-lsfr #info-wrapper span{
+    background: url("/image/sv/Blue-Dot.png") no-repeat 5px 8px;
+    background-size: 5px 5px;
+    display: block; /* Start Info in new line */
+    padding-left: 15px;
+}
+
+#body-lsfr #success{
+    background: url("/image/sv/Success-Sign.png") #DFF1C1 no-repeat 5px;
+    background-size: 28px 28px;
+    border: 1px solid #51891E;
+    color: #51891E;
+    min-height: 18px;  /* Height of the success bar */
+    margin: auto; /* Centralize success message */
+    width: 580px;
+}
+
+#body-lsfr #success-wrapper{
+    line-height: 20px; /* Line height between success message */
+    padding: 5px 5px 5px 40px;
+    word-wrap: break-word;
+}
+
+#body-lsfr .home_button{
+    margin: 10px auto;
+    width: 120px;
+}
+
+#body-lsfr #error{
+    background: url("/image/sv/Warning-Sign.png") #FFCCBA no-repeat 5px;
+    background-size: 28px 28px;
+    border: 1px solid #D63301;
+    color: #D63301;
+    min-height: 18px;  /*Height of the error bar*/
+    margin: 10px auto auto auto;
+    width: 580px;
+}
+
+#body-lsfr #error-wrapper{
+    line-height: 20px; /* Line height between error message */
+    padding: 5px 5px 5px 40px;
+    word-wrap: break-word;
+}
+
+#body-lsfr #error-wrapper span{
+    background: url("/image/sv/Red-Dot.png") no-repeat 5px 8px;
+    background-size: 5px 5px;
+    display: block; /* Start errors in new line */
+    padding-left: 15px;
+}
+
+#body-lsfr .message-title{
+    color: #000000;
+    font-weight: bold;
+    line-height: 1; /* Change back the line height caused by #error-wrapper */
+    margin-bottom: 5px; /*Distance to second error message */
+}

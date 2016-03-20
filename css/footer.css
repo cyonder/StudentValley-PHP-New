@@ -1,0 +1,20 @@
+#footer{
+    font-size: 14px;
+    margin: 20px auto;
+}
+
+#footer-wrapper{
+    margin: auto;
+    text-align: center;
+    width: 980px;
+}
+
+#footer-a{
+    margin-bottom: 5px;
+}
+
+#footer-a a{
+    margin-right: 5px;
+}
+
+#footer-b{}
